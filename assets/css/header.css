@@ -1,0 +1,97 @@
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(31, 25, 25, 0.5);
+}
+.navbar{
+    width:inherit; 
+    max-height: 100px;
+    display: flex;
+    padding: 10px;
+    background-color: transparent;
+}
+.leftnav{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.logoText{
+    padding-top: 7px;
+    transform: translateX(-5px);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    color: #f1f1f1;
+    line-height: 20px;
+}
+.textBig{
+    font-size:17px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: var(--navTextFont);
+    
+}
+.textSm{
+    font-size:13px;
+    font-family: var(--navTextFont);   
+}
+.logoImg{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.logoImg img{
+    aspect-ratio:1;
+    width: 50px;
+}
+.rightnav{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.navMenu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navMenu ul li{
+    padding: 3px;
+    transition: 0.2s ease-in-out;
+}
+.navMenu li a{
+    text-decoration: none;
+    color: var(--navTextColor);
+    font-family: var(--navTextFont);
+    font-size: 17px;
+    padding: 3px;
+    transition: 0.2s ease-in-out;
+}
+.navMenu ul li a:hover{
+    border-bottom: 2px solid antiquewhite;
+    border-radius: 5px;
+    color:antiquewhite;
+}

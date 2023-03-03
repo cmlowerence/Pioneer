@@ -1,0 +1,228 @@
+body{
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+#home{
+    background: url(../img/homeCoverLandscape.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index:-1;
+}
+.wrapper{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-100px);
+} 
+.tagLineWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 100px;
+    cursor: default;
+}
+.mainText{
+    font-size: 100px;
+    font-family: var(--taglineTextFont);
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 15px;
+}
+.sloganText{
+    font-size: 40px;
+    font-family: var(--taglineTextFont);
+    font-weight: 500;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+
+.btnWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnWrapper #explore{
+    outline: none;
+    padding: 7px 13px;
+    font-size: 17px;
+    color: #fff;
+    background-color: var(--expBtnColor);
+    font-family: var(--taglineTextFont);
+    border: none;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btnWrapper #explore:hover{
+    box-shadow:2px 2px 10px rgba(255,255,255,0.3),-2px 2px 10px rgba(255,255,255,0.3),2px -2px 10px rgba(255,255,255,0.3),-2px -2px 10px rgba(255,255,255,0.3);
+}
+
+/* About section css */
+#about{
+    background: url(../img/aboutBg.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index:-1;
+}
+.about-leftDiv{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-rightDiv{
+    padding: 20px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-text-wrapper{
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+.about-text-heading{
+    font-family: var(--navTextFont);
+    font-size: var(--mainHeadingFontSize);
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #d9d9d9;
+}
+.about-text-description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    gap: 20px;
+    align-items: flex-start;
+}
+.about-text-text{
+    font-size: 17px;
+    color: #d9d9d9;
+    line-height: 25px;
+    font-family: var(--navTextFont);
+}
+.about-text-readMore-btn{
+    border: 1px solid #d9d9d9;
+    padding: 5px 7px;
+    border-radius: 5px;
+    color: #d9d9d9;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.about-text-readMore-btn:hover{
+    box-shadow:2px 2px 4px rgba(255,255,255,0.3),-2px 2px 4px rgba(255,255,255,0.3),2px -2px 4px rgba(255,255,255,0.3),-2px -2px 4px rgba(255,255,255,0.3);
+}
+.about-img-wrapper img{
+    width: 400px;
+}
+
+
+/* Facilities Section CSS */
+#facilities{
+    background-color: #d9d9d9;
+    padding-top: 50px;
+}
+.facilities-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.facilities-heading-wrapper{
+    display: flex;
+    align-self: flex-start;
+}
+.facilities-heading{
+    font-family: var(--navTextFont);
+    font-weight: 700;
+    color: var(--royalBlue);
+    font-size: var(--mainHeadingFontSize);
+}
+.facilities-card-wrapper{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facilities-card-list{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.facilities-card{
+    display:flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:250px;
+    height: 410px;
+}
+.card-text-wrapper{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px 20px;
+
+}
+.card-text-heading{
+    display: flex;
+    font-family: var(--navTextFont);
+    font-size: 1rem;
+    color: var(--royalBlue);
+    font-weight: 600;
+}
+.card-text-description{
+    display: flex;
+    font-family: var(--navTextFont);
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.card-img-wrapper img{
+    aspect-ratio: 1;
+    width: 200px;
+}
+.btn{
+    color: var(--royalBlue);
+    background-color: transparent;
+    outline: none;
+    padding: 7px 13px;
+    font-size: 15px;
+    font-family: var(--navTextFont);
+    border: 1px solid var(--royalBlue);
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    box-shadow: 3px 3px 8px var(--royalBlueHover),-3px 3px 8px var(--royalBlueHover),3px -3px 8px var(--royalBlueHover),-3px -3px 8px var(--royalBlueHover);
+}

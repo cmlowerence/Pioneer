@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Caveat;
+    src: url(../fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Dancing_Script;
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Gloria_Hallelujah;
+    src: url(../fonts/GloriaHallelujah-Regular.ttf);
+}
+@font-face {
+    font-family: Handlee;
+    src: url(../fonts/Handlee-Regular.ttf);
+}
+@font-face {
+    font-family: Julee;
+    src: url(../fonts/Julee-Regular.ttf);
+}
+@font-face {
+    font-family: Lobster;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* Text Colors */
+    --navTextColor:#c8c3c3;
+    --royalBlue: rgb(0, 0, 121);
+    --royalBlueHover: rgba(0, 0, 121, 0.483);
+    /* BG colors */
+    --expBtnColor: #d6228e;
+    /* Text fonts */
+    --navTextFont:Ubuntu;
+    --taglineTextFont:Handlee;
+    /* Font Sizes */
+    --mainHeadingFontSize: 60px;
+    /* Variable card widths */
+    --cardWidth: 250px;
+    
+}

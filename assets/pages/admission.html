@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer/Admissions</title>
+    <link rel="stylesheet" href="./css/admission.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/root.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="leftnav">
+                <div class="logo">
+                    <span class="logoImg">
+                        <a href="../../index.html#home"><img src="../img/logo3.png" alt="Logo"> </a>
+                    </span>
+                    <span class="logoText">
+                        <span class="textBig">
+                            PIONEER
+                        </span>
+                        <span class="textSm">
+                            International CBSC School
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="rightnav">
+                <div class="navMenu">
+                    <ul>
+                        <li><a href="../../index.html#about">About us</a></li>
+                        <li><a href="../../index.html#facilities">Learning</a></li>
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Activities</a></li>
+                        <li><a href="#">Communities</a></li>
+                        <li><a href="#">Quick Links</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="admission-container">
+        <section class="admissionFormWrapper">
+            <div class="admissionHeading">
+                Pioneer School Admission Form
+            </div>
+            <form action="../php/index.php" id="admissionForm">
+                <table class="admissionFormatter">
+                    <tr>
+                        <td class="fieldLabel">
+                            <label for="candidate-f-name">Name:- </label>
+                        </td>
+                        <td class="fieldData">
+                            <span>
+                                <input type="text" name="candidateFirstName" id="candidate-f-name" placeholder="First Name">
+                                <input type="text" name="candidateLastName" id="candidate-l-name" placeholder="Last Name">
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fieldLabel">
+                            <label for="candidate-req-class">Class you want to apply for:- </label>
+                        </td>
+                        <td class="fieldData">
+                            <select name="candidateReqClass" id="candidate-req-class">
+                                <option hidden selected disabled>Choose your class</option>
+                                <option value="nursery">Nursery</option>
+                                <option value="kinderGarden"><abbr title="Kinder Garden">K.G.</abbr></option>
+                                <option value="1">First</option>
+                                <option value="2">Second</option>
+                                <option value="3">Third</option>
+                                <option value="4">Fourth</option>
+                                <option value="5">Fifth</option>
+                                <option value="6">Sixth</option>
+                                <option value="7">Seventh</option>
+                                <option value="8">Eighth</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fieldLabel">
+                            <label for="candidate-dob">Date of Birth:- </label>
+                        </td>
+                        <td class="fieldData">
+                            <input type="date" name="candidateDOB" id="candidate-dob">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fieldLabel">
+                            <label for="candidate-guardian-f-name">Parents/Guardian Name:- </label>
+                        </td>
+                        <td class="fieldData">
+                            <input type="text" name="candidateGuardianFirstName" id="candidate-guardian-f-name" placeholder="First Name">
+                            <input type="text" name="candidateGuardianLastName" id="candidate-guardian-l-name" placeholder="Last Name">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fieldLabel">
+                            <label for="candidate-city">Address:- </label>
+                        </td>
+                        <td class="fieldData">
+                            <input type="text" name="candidateAddress" id="candidate-city" placeholder="Village,City,District">
+                            <input type="text" name="candidateAddress" id="candidate-state" placeholder="State">
+                            <input type="text" name="candidateAddress" id="candidate-country" placeholder="Country">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fieldLabel">
+                            <label for="candidate-email">Email:- </label>
+                        </td>
+                        <td class="fieldData">
+                            <input type="email" name="candidateEmail" id="candidate-email" placeholder="Email">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fieldLabel">
+                            <label for="candidate-photo">Photo:- </label>
+                        </td>
+                        <td class="fieldData">
+                            <label for="candidate-photo" class="fileLabelWrapper">
+                                <input type="file" name="candidatePhoto" id="candidate-photo" placeholder="Photo">
+                                <span id="photoPreview"class="previewBox previewPhoto"><img id="photoPreview__image" src="./img/photoPlaceholder.jpg" alt="Photo" /></span>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="fieldLabel">
+                            <label for="candidate-email">Signature:- </label>
+                        </td>
+                        <td class="fieldData">
+                            <label for="candidate-signature" class="fileLabelWrapper">
+                                <input type="file" name="candidateSignature" id="candidate-signature" placeholder="Signature">
+                                <span id="signaturePreview" class="previewBox previewSignature"><img id="signaturePreview__image" src="./img/signaturePlaceholder.jpg" alt="Signature" /></span>
+                        </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="formBtn">
+                            <button id="admissionFormSubmit">Submit Form</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="left-footer">
+            <div class="logo">
+                <span class="logoImg">
+                    <a href="#home"><img src="../img/logo3.png" alt="Logo"> </a>
+                </span>
+                <span class="logoText">
+                    <span class="textBig">
+                        PIONEER
+                    </span>
+                    <span class="textSm">
+                        International CBSC School
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="right-footer">
+            <div class="footer-admission-btnWrapper">
+                <span class="footer-admission-text">For Enquiry Regarding Admission </span>
+                <button class="footer-admission-btn">Apply Online</button>
+            </div>
+            <div class="footer-copyright-text">
+                <span class="copyright-text">
+                    Copyright &copy; 2023 Pioneer International School |
+                </span>
+                <a class="websiteLink" href="#">
+                    a Website</a>
+                    <a class="privacy-policy-link" href="#">
+                        Privacy Policy
+                    </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/admissionFunctions.js"></script>
+</body>
+</html>
